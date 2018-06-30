@@ -5,24 +5,45 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	
-	<!--Ao abrir a tag <a> e não especificar o href ela recarrega a própria página -->
-	<a href="">
-		Home
-	</a>
-	/
-	<!-- Tag <a> cria um link para outra pagina, tanto interna do projeto quanto externa da internet.-->
-	<a href="contato.html">
-		Contato
-	</a>
+	<h1>Lista de Produtos</h1>
+	<table border="2" width="100%">
+		<!--- tr - table row (Linha da tabela) --->
+		<tr>
+			<!--- th - table-head representa o titulo ou baceçalho de cada coluna da tabela--->
+			<th>Código</th>
+			<th>Produto</th>
+			<th>Preço</th>
+		</tr>
 
-	<h2>Página principal</h2>
-	<!-- carrega na tela uma imagem que pode sere tanto interna do projeto quanto externa da internet.-->
-	<img src="imagens/ferrari.jpg" width="400">
+		<tr>
+			<!--- td - representa os dados de uma tabela (celolas da tabela)--->
+			<td>001</td>
+			<td>Notebook</td>
+			<td>R$2500,99</td>
+		</tr>
 
+		<tr>
+			<td>002</td>
+			<td>Tablet</td>
+			<td>R$999,99</td>
+		</tr>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut urna orci. Aenean luctus rutrum dictum. Nullam commodo volutpat ante, vel accumsan lorem mattis et. Proin finibus, leo at eleifend pulvinar, arcu turpis tempor neque, a tristique nunc diam ac lectus. Suspendisse finibus molestie est id dapibus. Curabitur at augue imperdiet, congue nisl ac, aliquam lectus. Nullam ultricies suscipit elit, sed mattis massa fermentum vel.</p>
+		<tr>
+			<!---  row span (espande a linha) neste caso uma celula ocupa duas linhas --->
+			<td rowspan="2">Desconto</td>
+			<!--- col span (espande a coluna) neste caso uma celula ocupa duas colunas--->
+			<td colspan="2">cupom 01 - R$10,00</td>
+		</tr>
 
-<p>Nam sit amet dictum turpis, ac tempus sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris aliquet magna vitae sollicitudin pharetra. Mauris pretium semper nisi, at cursus dolor. Phasellus eget nunc iaculis, euismod erat non, euismod nibh. Morbi sollicitudin nec dui vel semper. Nunc pulvinar nulla et lectus volutpat, in convallis erat vulputate. Aenean ultrices nunc vel purus rutrum, non rutrum orci elementum. Curabitur elit sapien, vehicula eu erat sed, consectetur volutpat enim.</p>
+		<tr>
+			<td colspan="2">cupom 02 - R$12,00</td>
+		</tr>
+
+		<tr>
+			<td>Total:</td>
+			<td colspan="2">R$ 3478,98</td>
+		</tr>
+
+	</table>
 </body>
 </html>
