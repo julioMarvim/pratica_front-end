@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina principal</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Lista de Produtos</h1>
+	<table border="2" width="100%">
+		<!-- tr - table row (Linha da tabela) -->
+		<tr>
+			<!-- th - table-head representa o titulo ou baceçalho de cada coluna da tabela-->
+			<th>Código</th>
+			<th>Produto</th>
+			<th>Preço</th>
+		</tr>
+
+		<tr>
+			<!-- td - representa os dados de uma tabela (celolas da tabela)-->
+			<td>001</td>
+			<td>Notebook</td>
+			<td>R$2500,99</td>
+		</tr>
+
+		<tr>
+			<td>002</td>
+			<td>Tablet</td>
+			<td>R$999,99</td>
+		</tr>
+
+		<tr>
+			<!--  row span (espande a linha) neste caso uma celula ocupa duas linhas -->
+			<td rowspan="2">Desconto</td>
+			<!-- col span (espande a coluna) neste caso uma celula ocupa duas colunas-->
+			<td colspan="2">cupom 01 - R$10,00</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">cupom 02 - R$12,00</td>
+		</tr>
+
+		<tr>
+			<td>Total:</td>
+			<td colspan="2">R$ 3478,98</td>
+		</tr>
+
+	</table>
+</body>
+</html>

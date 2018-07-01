@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pagina principal</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Login</h2>
+
+	<form>
+			Login:<br>
+			<!--  input é uma tag de entrada de dados de um formulario nesse caso definida com o tipo texto.-->
+			<input type="text" name="login"><br>
+
+			Senha:<br>
+			<!-- neste caso type é password, esconde os caracteres, o atributo name serve para identificar a tag input para ser manipulada em outras paginas atraves da linguagem de programação-->
+			<input type="password" name="name"><br>
+
+			<input type="button" value="Logar">
+	</form>
+
+	<h2>Cadastro</h2>
+
+	<form>
+		Login:<br>
+		<input type="text" name="login"><br><br>
+		<!-- type radio é uma especie de caixa de seleção, ao definir o name com o mesmo valor vc deixa apenas uma das opções marcadas-->
+		Sexo:<br>
+		<input type="radio" name="sexo" value="M">Masculino<br>
+		<!-- value representa o valor que foi passado para uma tag de input, tbm serve para identificar a informação que aquela tag retorna -->
+		<input type="radio" name="sexo" value="F">Masculino<br><br>
+		Interesses:<br>
+		<!-- checkbox é uma caixa de seleção de opções -->
+		<input type="checkbox" name="Interesses">Futebol<br>
+		<input type="checkbox" name="Interesses">Cursos<br>
+		<input type="checkbox" name="Interesses">Moda<br><br>
+		Estado:<br>
+		<!-- uma caixa de seleção de uma unica opção normalmente utilizada para uma lista com muitas opções que ficam escondidas -->
+		<select name="estado">
+			<!-- option representa as opções da lista, ao recuperar o name da tag select poderemos ver os value de cada option da lista-->
+			<option value="SP">SP</option>
+			<option value="MG">MG</option>
+			<option value="RJ">RJ</option>
+			<option value="RS">RS</option>
+		</select><br><br>
+
+		Observações:<br>
+		<!-- area de texto que pode ser usada para digitar textos maiores -->
+		<textarea></textarea><br>
+
+		<input type="button" value="cadastrar">
+
+	</form>
+
+</body>
+</html>
