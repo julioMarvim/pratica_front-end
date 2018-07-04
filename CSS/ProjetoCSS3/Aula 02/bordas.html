@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Bordas</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+
+			/*A propriedade border é usada para criar bordas e possue tres valores espessura/tipo/cor */
+			#dotted{
+				border: 15px dotted red;
+			}
+
+			#dashed{
+				border: 15px dashed green;
+			}
+
+			#solid{
+				border: 5px solid red;
+			}
+
+			#double{
+				border: 10px double blue;
+			}
+
+			#groove{
+				border: 15px groove red;
+			}
+
+			#ridge{
+				border: 15px ridge gray;
+			}
+
+			#inset{
+				border: 15px inset green;
+			}
+
+			#outset{
+				border: 15px outset gray;
+			}
+
+			#none{
+				border: 15px none gray;
+			}
+
+			#hidden{
+				border: 15px hidden gray;
+			}
+
+			#personalizado{
+
+				/*Aplicando dessa forma podemos personalizar melhor cada atributo da borda separadamente para cada lado*/
+				border-color: red green 
+					yellow blue;
+
+				border-width: 15px 10px 5px;
+				border-style: solid groove
+					ridge outset 
+			}
+
+		</style>
+		
+	</head>
+
+	<body>
+		
+		<div id="dotted">
+			Define uma borda pontilhada<br><br>
+		</div>
+
+		<div id="dashed">
+			Define uma borda tracejada<br><br>
+		</div>
+
+		<div id="solid">
+			Define uma borda sólida<br><br>
+		</div>
+
+		<div id="double">
+			Define uma fronteira dupla<br><br>
+		</div>
+
+		<div id="groove">
+			Define uma borda com sulcos 3D. O efeito depende do valor da cor da borda<br><br>
+		</div>
+
+		<div id="ridge">
+			Define uma borda 3D sulcada. O efeito depende do valor da cor da borda<br><br>
+		</div>
+
+		<div id="inset">
+			Define uma borda inserida em 3D. O efeito depende do valor da cor da borda<br><br>
+		</div>
+
+		<div id="outset">
+			Define uma borda inserida em 3D. O efeito depende do valor da cor da borda<br><br>
+		</div>
+
+		<div id="none">
+			não define fronteiras<br><br>
+		</div>
+
+		<div id="hidden">
+			Define uma borda oculta<br><br>
+		</div>
+
+		<div id="personalizado">
+			não define fronteiras<br>
+		</div>
+	</body>
+
+</html>
