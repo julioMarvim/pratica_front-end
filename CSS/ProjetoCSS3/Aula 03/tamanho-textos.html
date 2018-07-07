@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tamanho de textos</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*px -> tamanho fixo da fonte
+		  %  -> tamanho relativo da fonte, de acordo com o tamanho que o browser utiliza como padrão ex 16px para a tag <p>
+		  em -> tamanho proporcional ao tamanho do container pai, onde os valores do "em" serão um multipicador do tamanho padrão da fonte no container.
+		  */
+		.tamanho-fixo{
+			color: #8258FA;
+			font-size: 30px;
+		}
+
+		.tamanho-relativo{
+			color: #04B431;
+			font-size: 100%;
+		} 
+
+		.container-pai{
+			font-size: 30px;
+		}
+
+		.tamanho-proporcional{
+			color: #00BFFF;
+			font-size: 2em;
+		}
+
+	</style>
+</head>
+<body>
+
+	<p class="tamanho-fixo">Tamanho fixo da fonte <strong>30px</strong>.</p>
+	<p class="tamanho-relativo">Tamanho relativo ao tamanho que o browser utiliza como padrão nesse caso 16px e a formatação é de <strong>200%</strong>.</p>
+
+	<div class="container-pai">
+
+		<p>Tamanho padrão do <strong>container pai.</strong></p>
+		<p class="tamanho-proporcional">Tamanho proporcional ao tamanho <strong>do container pai.</strong></p>
+		<p class="tamanho-relativo">Se aplicarmos uma class incluindo uma <strong>formatação específica</strong> para um <u>elemento filho</u>, ela tem ordem de prioridade em relação a formatação do <u>container pai</u>. Neste caso temos o container pai com um tamanho fixo de <strong>30px</strong>, porem essa tag <em>"p"</em> possui uma formatação para tamanho relativo de <strong>100%</strong>.</p>
+
+	</div>
+
+</body>
+</html>

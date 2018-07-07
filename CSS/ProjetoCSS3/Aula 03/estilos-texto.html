@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estilos de texto</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		.negrito{
+			/*Normal, bold de 100 até 900*/
+			font-weight: bold;
+		}
+
+		.italico{
+			font-style: italic;
+		}
+
+		.formatacao{
+			/*text-decoration: underline;*/
+			/*text-decoration: overline;*/
+			text-decoration: line-through;
+		}
+
+		.formatacao-container{
+			font-family: "Courier New", "Lucida Console", monospace;
+			color: #045FB4;
+			font-size: 30px;
+		}
+
+		.texto{
+			color: #B4045F;
+			/*Com a propriedade font podemos definer todas as formatações para a font sem precisar chamar as demais propriedades aplicadas, ajudando a economizar codigo.*/
+			font: bold 100% "Lucida Sans Unicode", "Lucida Grande",sans-serif;
+		};
+
+	</style>
+</head>
+<body class="formatacao-container">
+
+	<p class="negrito">Texto em negrito</p>
+	<p>Texto em negrito</p>
+
+	<p class="italico">Texto em italico</p>
+
+	<p class="formatacao">Formatação de texto</p>
+
+	<p class="texto">Estou decorando a fonte utilizando apenas uma propriedade para estilizar esse paragrafo, sem a necessidade de aplicar diretamente <em>font-weight</em>, <em>font-family</em> ou <em>font-size</em>. Tudo graças a propriedade: <em>font</em>.</p>
+
+</body>
+</html>
