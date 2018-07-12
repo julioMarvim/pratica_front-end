@@ -1,0 +1,28 @@
+.conteudo{
+	background: #9A2EFE;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+}
+
+.conteudo1{
+	background: #58FAF4;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+	/*A propriedade float faz com o que o elemento saia do seu patamar padrão e passe para um patamar chamado flutuante onde ele fica
+	em uma camada acima dos demais como se estivesse flutuando sobre eles, podendo inclusive sobrepor outros elementos. podemos utilizar 
+	os valores left e right para posicionar o elemento*/
+	float: left;
+}
+
+.todos-flutuando{
+	background: #819FF7;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+}
+
+
