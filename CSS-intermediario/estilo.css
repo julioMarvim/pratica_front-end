@@ -1,0 +1,75 @@
+/*Modelos de Caixa*/
+
+.conteudo{
+	border: 1px solid red;
+	/*O padding é contabilizado com o valor total do widith ou hidth da caixa. nesse caso temos 170px de width + 20px do padding right
+	totalizando 190px */
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	/*O margin é aplicado para fora do elemento, como se fosse um vetor que saisse da div e a distanciasse do elemento proximo de acordo 
+	com o valor e a direção aplicado*/
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	width: 170px;
+}
+
+.formatacao-geral{
+	border: 1px solid red;
+	/*Dessa forma podemos definir todas as propriedades top, rigth, botton e left de uma vez só COMEÇANDO PELO TOP E SEQUENCIALMENTE NO
+	SENTIDO HORÁRIO*/
+	padding: 20px 20px 20px 20px;
+	/*Dessa forma podemos definir todas as propriedades top, rigth, botton e left de uma vez só COMEÇANDO PELO TOP E SEQUENCIALMENTE NO
+	SENTIDO HORÁRIO*/
+	margin: 20px 20px 20px 20px;
+	width: 170px;
+}
+
+.formatacao-padrao{
+	border: 1px solid red;
+	/*Todos os lados com o mesmo valor*/
+	padding: 20px;
+	/*Todos os lados com o mesmo valor*/
+	margin: 20px;
+	width: 170px;
+}
+
+.formatacao-padrao-lados{
+	border: 1px solid red;
+	/*Primeiro valor  padrão para top e button e depois valor padrão para left e right*/
+	padding: 20px 20px;
+	/*Primeiro valor  padrão para top e button e depois valor padrão para left e right*/
+	margin: 20px 20px;
+	width: 170px;
+}
+
+.div-superior{
+	border: 1px solid blue;
+	margin-bottom: 50px;
+	width: 200px;
+}
+
+.div-inferior{
+	border: 1px solid blue;
+	margin-top: 30px;
+	width: 200px;
+}
+
+/*Exemplo de formatação comum onde sé é aplicado margin e padding*/
+#noticia{
+	border: 1px  solid #9A2EFE;
+	padding: 10px
+}
+
+/*Por padrão o h2 ja possui uma margin nesse caso eu retirei toda essa margin*/
+h2{
+	border: 1px  solid #9A2EFE;
+	margin: 0px;
+}
+/*Apenas apliquei uma borda no paragrafo para melhorar a visualização*/
+#paragrafo{
+	border: 1px  solid #9A2EFE;
+}
