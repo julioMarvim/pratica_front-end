@@ -25,4 +25,16 @@
 	float: left;
 }
 
+#principal{
+	background: #CEF6CE;
+	border: 5px solid red;
+}
 
+.clear{
+	/*Podemos utilizar a propriedade clear para limpar o fluxo flutuante assim o seu conteúdo não fica sobreposto ao elemento
+	no qual a propriedade clear é aplicada, podemos utlizar:
+	left para limpar elementos flutuando à esquerda.
+	pode limpar para a direita com right.
+	 both em ambas as  direções*/
+	clear: both;
+}
