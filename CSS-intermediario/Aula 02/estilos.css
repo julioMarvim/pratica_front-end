@@ -36,5 +36,5 @@
 	left para limpar elementos flutuando à esquerda.
 	pode limpar para a direita com right.
 	 both em ambas as  direções*/
-	clear: both;
+	clear: left;
 }
