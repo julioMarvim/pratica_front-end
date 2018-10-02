@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elementos Flutuantes na Prática</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		body{
+			background: #f4f4f4;
+		}
+
+		#Principal{
+			width: 920px;
+		}
+
+		.noticia{
+			background: #e5e5e5;
+			padding: 5px;
+			width: 280px;
+			margin: 7px;
+			float: left;
+		}
+
+		.imagen-galeria{
+			background: white;
+			width: 265px;
+			padding: 5px;
+			margin: 15px;
+			float: left;
+		}
+		/*Limpa o fluxo de elementos flutuantes*/
+		.clear{
+			clear: both;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div id="Principal">
+		<div>
+			<div class="noticia">
+				<h2>Titulo da notícia 1</h2>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+				<a href="">Continuar lendo...</a>
+			</div>
+			<div class="noticia">
+				<h2>Titulo da notícia 2</h2>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+				<a href="">Continuar lendo...</a>
+			</div>
+			<div class="noticia">
+				<h2>Titulo da notícia 3</h2>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+				<a href="">Continuar lendo...</a>
+			</div>
+		</div> <!--div Notícias-->
+
+		<!--div utilizando a class clear, apenas para limpar o fluxo de elementos flutuantes, neste caso deve ser colocada apenas
+			abaixo dos elementos flutuantes que deseja limpar-->
+		<div class="clear"></div>
+
+		<div class="imagen-galeria">
+			<div>
+				<img src="imagens/imagem1.png">
+				<p>Resumo</p>
+			</div>
+		</div><!--Imagen-galeria-->
+		<div class="imagen-galeria">
+			<div>
+				<img src="imagens/imagem2.png">
+				<p>Resumo</p>
+			</div>
+		</div><!--Imagen-galeria-->
+		
+		<div class="imagen-galeria">
+			<div>
+				<img src="imagens/imagem3.png">
+				<p>Resumo</p>
+			</div>
+		</div><!--Imagen-galeria-->
+		
+		<div class="imagen-galeria">
+			<div>
+				<img src="imagens/imagem4.png">
+				<p>Resumo</p>
+			</div>
+		</div><!--Imagen-galeria-->
+		
+		<div class="imagen-galeria">
+			<div>
+				<img src="imagens/imagem5.png">
+				<p>Resumo</p>
+			</div>
+		</div><!--Imagen-galeria-->
+		
+
+		
+	</div><!--div Principal-->
+
+</body>
+</html>
