@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posicionamentos (Static, Relative, absolute e fixed)</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+	body{
+		background: #007fc7;
+	}
+		
+	#container{
+		background: #FFF;
+		width: 800px;
+		/*define uma margem de 10px top e as laterais terá seu valor calculado de acordo com o tamanho da div*/
+		margin: 10px auto;
+		/*Espaçamento interno de 10px de distância da borda da div*/
+		padding: 10px;
+		/*SE NAO TIVESSE VALOR DE POSICAO OS ELEMENTOS POSICIONADOS DE FORMA ABSOLUTA SERIAM POSICIONADOS DE ACORDO COM O BODY*/
+		position: relative;
+	}
+
+	h1{
+
+	}
+
+	p{
+		width: 300px;
+	}
+
+	.absolute{
+		border: 1px solid red;
+		background: #f2f2f2;
+		/*para que a formatação seja realizada precisamos informar qual a propriedade de deslocamento queremos aplicar (top, botton, left, right )*/
+		position: absolute;
+		/*(top, botton, left, right )*/
+		top: 80px;
+		right: 80px;/*O posicionamento absoluto será calculado de acordo com o container daquele elemento que tiver valor de posicao != de static */
+	}
+
+	.fixed{
+		border: 1px solid red;
+		background: #f2f2f2; 
+		/*para que a formatação seja realizada precisamos informar qual a propriedade de deslocamento queremos aplicar (top, botton, left, right )*/
+		position: fixed;
+		/*(top, botton, left, right )*/
+		bottom: 0px;
+		right: 80px;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="container">
+		<!--POR PADRÃO OS ELEMENTOS DO TIPO BLOCK SÃO POSICIONADOS UM ABAIXO DO OUTRO E SEGUEM A MESMA SEQUENCIA PADRÃO DE LEITURA DO DOCUMENTO (CIMA P/ BAIXO) SE NÃO APLICAR-MOS NENHUM POSICIONAMENTO O ELEMENTO SERÁ position: static;-->
+		<h1>Posicionamentos</h1>
+		<p>
+			P1 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+		<!--Ao aplicarmos um position: absolute; em um elemento ele passa a não influênciar no posicionamento dos outros elementos contidos no documento.-->
+		<p class="absolute">
+			P2 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+		<!--Ao aplicarmos um position: fixed; em um elemento ele passa a utilizar um posicionamento fixo em relação a janela de exibição do navegardor, mesmo que movimente-mos a barra de rolagem ele fica sempre no mesmo lugar-->
+		<p class="fixed">
+			P3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p>
+			P4 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p>
+			P5 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p>
+			P3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p>
+			P3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p>
+			P3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p>
+			P3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p>
+			P3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p> 
+
+	</div>
+
+</body>
+</html>

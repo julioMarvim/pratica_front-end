@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elementos Inline, Block e Inline-block</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		
+		.borda-block{
+			border: 1px solid red;
+			/*Com a propriedade desplay podemos alterar a caracteristica de um elemento mudando para inline, block ou inline-block*/
+			display: inline;
+		}
+
+		.borda-inline{
+			border: 1px solid red;
+			/*Com a propriedade desplay podemos alterar a caracteristica de um elemento mudando para inline, block ou inline-block*/
+			display: block;
+		}
+
+		.borda-inlin-block{
+			border: 1px solid red;
+			/*Com a propriedade desplay podemos alterar a caracteristica de um elemento mudando para inline, block ou inline-block*/
+
+			/*EM ESPECIAL INLINE-BLOCK TEM COMO PADRÃO DEIXAR OS ELEMENTOS NA MESMA LINHA, SO MUDANDO PARA OUTRA LINHA QUANDO NÃO HOUVER MAIS ESPAÇO*/
+			display: inline-block;
+		}
+
+	</style>
+</head>
+<body>
+		<!--Em um elemento do tipo BLOCK como um H1-->
+		<div class="borda-block"> Bloco 01</div>
+		<div class="borda-block"> Bloco 02</div>
+
+		<br>
+		<br>
+		<!--Em um elemento do tipo INLINE como um SPAN-->
+		<span class="borda-inline"> Inline 01</span>
+		<span class="borda-inline"> Inline 02</span>
+
+		<br>
+		<br>
+		<!--Em um elemento do tipo INLINE como um SPAN podendo ser alterado de acordo com o tamanho sendi inline ENQUANTO COUBER NA MESMA LINHA-->
+		<span class="borda-inlin-block"> Este conteúdo está "empurrando" para a linha de baixo o elemento a seguir como pode visualisar --------------------------------------------------------------------------------------------------------------------------------------></span>
+		<span class="borda-inlin-block"> Inline 02</span>
+
+
+
+</body>
+</html>

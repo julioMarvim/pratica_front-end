@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posicionamentos (Static, Relative, absolute e fixed)</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+	body{
+		background: #007fc7;
+	}
+		
+	#container{
+		background: #FFF;
+		width: 800px;
+		/*define uma margem de 10px top e as laterais terá seu valor calculado de acordo com o tamanho da div*/
+		margin: 10px auto;
+		/*Espaçamento interno de 10px de distância da borda da div*/
+		padding: 10px;
+	}
+
+	h1{
+		position: static;
+	}
+
+	p{
+		position: static;
+		width: 300px;
+	}
+
+	.relative{
+		border: 1px solid red;
+		/*para que a formatação seja realizada precisamos informar qual a propriedade de deslocamento queremos aplicar (top, botton, left, right )*/
+		position: relative;
+		/*(top, botton, left, right )*/
+		top: 20px; /*QUALQUER UMA DAS PROPRIDADES ACEITAM VALOR NEGATIVO MOVIMENTANDO-SE NO SENTIDO INVERSO*/
+		left: 80px;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div id="container">
+		<!--POR PADRÃO OS ELEMENTOS DO TIPO BLOCK SÃO POSICIONADOS UM ABAIXO DO OUTRO E SEGUEM A MESMA SEQUENCIA PADRÃO DE LEITURA DO DOCUMENTO (CIMA P/ BAIXO) SE NÃO APLICAR-MOS NENHUM POSICIONAMENTO O ELEMENTO SERÁ position: static;-->
+		<h1>Posicionamentos</h1>
+		<p>
+			P1 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p class="relative">
+			P2 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+
+		<p>
+			P3 -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend consectetur quam, sed aliquam nunc fermentum ut. Etiam facilisis diam vel ligula commodo tempor. Phasellus eget aliquet tortor, vel porttitor lacus. Aliquam erat volutpat. Maecenas lectus diam, eleifend non aliquet pharetra, aliquam sed dui.
+		</p>
+	</div>
+
+</body>
+</html>
