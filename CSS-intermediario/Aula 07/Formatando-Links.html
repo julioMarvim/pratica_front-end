@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formatando Links</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		.container{
+			background: #FFF;
+			margin: 10px auto;
+		}
+
+		.informacao{
+			background: #A9D0F5;
+			margin: 20px;
+			padding: 10px;
+			width: 500px;
+			height: auto;
+			position: static;
+			top: 80px;
+		}
+
+		a{
+			padding: 5px 10px;
+			text-decoration: none;
+		}
+
+		/*------------ESTADOS DE UM LINK-------------*/
+		/*Links NÃO VISITADOS.*/
+		a:link{
+			color: #b9c941;
+		}
+		/*Links JÁ VISITADOS.*/
+		a:visited{
+			color: #c0c0c0;
+		}
+		/*Links hover altera o link quando passamos o mouse sobre ele.*/
+		/*PODEMOS APLICAR QUALQUER OUTRA FORMATAÇÃO JA APRENDIDA ATÉ O MOMENTO*/
+		a:hover{
+			background: #6d790f;
+			color: #FFF;
+		}
+		/*Links active altera o link no momento em que ele for clicado.*/
+		a:active{
+			color: #e4f371;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<a href="https://www.google.com.br/">Google (JÁ VISITADO)</a> |
+		<a href="https://www.naovisitado.com.br/">Link Não Visitado</a> |
+		<a href="https://www.tecmundo.com.br/">Tec Mundo (JÁ VISITADO)</a> |
+		<a href="https://www.megacurioso.com.br/">Mega Curioso (JÁ VISITADO)</a>
+
+		<div class="informacao">
+			Podemos adotar por padrão a prática de definir a mesma formatão para links <em>a:link</em> e para <em>a:visited</em> pois dessa forma não haverá diferença em nenhum dos estados.
+		</div>
+
+		<div class="informacao">
+			Podemos também agrupar os estados dos links em uma formatação apenas caso eles estejam recebendo a mesma formatação da seguinte forma <br><em>a:link, a:visitedo{<br>		background: #fff;<br>
+			}</em>
+		</div>
+
+	</div> 
+
+</body>
+</html>
