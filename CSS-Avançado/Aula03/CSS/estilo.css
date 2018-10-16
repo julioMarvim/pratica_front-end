@@ -1,0 +1,42 @@
+/*Customizando listas com CSS*/
+#lista-atividades{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#lista-atividades li{
+	width: 200px;
+	border: 1px solid red;
+	padding: 5px 20px;
+	background: url(../Imagens/seta.png) no-repeat left center; 
+}
+
+
+/*
+	**** BARRA DE NAVEGAÇÃO VERTICAL ****
+*/
+
+#menu-lateral{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#menu-lateral a{
+	width: 200px;
+	height: 40px;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;/*Identação do texto*/
+	line-height: 40px;/*Modifica a altura da linha, que tem por padrão o tamanho da font (font-size)*/
+	display: block;
+	background: url(../Imagens/menu.png) no-repeat left bottom;/*(..) faz com que a seleção volte a partir da pasta raiz do projeto*/
+}
+
+/*Conseguimos criar o efeito de movimentação do menu apenas trocando a posição da imagem de fundo quando o estado do link for 
+hover (passar o mouse sobre)*/
+#menu-lateral a:hover{
+	background-position: right bottom;
+	color: white;
+}

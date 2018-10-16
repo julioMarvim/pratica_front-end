@@ -1,0 +1,47 @@
+/*
+		**** HERANÇA E ESPECIFICIDADE ****
+*/
+/*Todos os elementos contidos no body recebem essa formatação pois essa formatação é HERDADA do body*/
+body{
+	color: black;
+	/*Por padrão border e background não são herdados portanto são aplicadas somente no body e não nos elementos contidos nele*/
+	border: 1px solid #BE81F7;
+	background: #CECEF6;
+}#A9BCF5;
+
+
+
+
+/*ALGUMAS ESPECIFICIDADES EM CSS*/
+
+/*Para seletores iguais o ultimo irá prevalecer, a menos que apliquemos a excessão "!important", dessa forma o seletor ao qual
+a excessão for aplicada irá prevalecer*/
+
+#pagina p{
+	color: red !important;
+}
+
+#pagina p{
+	color: green;
+}
+
+/*Se um seletor for mais especifico que outro a regra mais específica será aplicada,
+(Terá precedência sobre regras mais gerais.)*/
+
+*{
+	color: green;
+}
+
+h2{/*3*/
+	color: black;
+}
+
+/*Sempre o mais específico terá a precedência*/
+h2.blue{/*2*/
+	color: blue;
+}
+
+/*IDs são mais específicos de class, portanto tem precedência*/
+h2#roxo{/*1*/
+	color: purple;
+}

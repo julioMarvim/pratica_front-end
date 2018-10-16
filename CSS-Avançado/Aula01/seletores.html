@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seletores</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+</head>
+<body>
+	<ul>
+		<li>
+			<span>
+				<a href="">Home(Não é filho direto da li)</a>
+			</span>
+		</li>	
+
+		<li><a href="">Sobre(Formatado pelo seletor li>a{})</a></li>
+	</ul>
+	<a href="">Link não filho de li</a>
+	<div>
+		Todos os elementos tem bordas, se o seletor universal estiver descomentado.
+	</div>
+
+	<h1 id="cabecalho">Seletor de texto</h1>
+
+	<div>
+		<span class="verde">Teste seletor de Classe, se eu não estiver verde, apenas o seletor p.verde{} está sendo uzado</span>
+		<p class="verde">Teste seletor de Classe</p>
+	</div>
+	<div>
+		<h2>Titulo 01</h2>
+		<p>Primeiro parágrafo irmão de H2, formatado com seletor de irmão adjacente h2+p{}</p>
+		<p>Este <a href="">Link</a> foi formatado por um seletor de descendente div a{}</p>
+	</div>
+
+	<div>
+		<h3>Titulo 02 </h3>
+		<p>Primeiro parágrafo irmão de H2, formatado com seletor de irmão geral h2~p{}</p>
+		<p>Segundo parágrafo irmão de H2, formatado com seletor de irmão geral h2~p{}</p>
+		<p>Terceiro parágrafo irmão de H2, formatado com seletor de irmão geral h2~p{}</p>
+	</div>
+</body>
+</html>

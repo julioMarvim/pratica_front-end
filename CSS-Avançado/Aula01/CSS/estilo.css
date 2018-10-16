@@ -1,0 +1,74 @@
+/*
+	*** SELETOR UNIVERSAL ***
+*/
+ /*Seleciona todos os elementos contidos no projeto*/
+/**{
+	border: 1px solid red;
+}/
+
+/*
+	*** SELETOR DE TEXTO ***
+*/
+/*Seleciona elementos pelo nome*/
+h1{
+  color: blue; 
+}
+
+/*
+	*** SELETOR DE CLASSE ***
+*/
+/*Seleciona qualquer elemento cujo atributo class tem valor verde*/
+.verde{
+	color: green;
+}
+/*Seleciona somente os elementos <p> cujo atributo class tem valor verde*/
+p.verde{
+	color: green;
+}
+
+/*
+	*** SELETOR DE ID ***
+*/
+/*Seleciona apenas o elemento cujo atributo id tem valor cabecalho*/
+#cabecalho{
+	border: 1px solid #CCC;
+}
+
+/*
+	*** SELETOR DE FILHOS ***
+*/
+/*Seleciona um elemento que e filho direto de outro elemento*/
+li>a{
+	color: red;
+	text-decoration: none;
+}
+
+/*
+	*** SELETOR DE DESCENDENTES ***
+*/
+/*Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>, mesmo e houver outros elementos aninhados entre eles*/
+
+div a{
+	color: pink;
+	text-decoration: none;
+}
+
+/*
+	*** SELETOR DE IRMÃO ADJACENTES ***
+*/
+/*Seleciona um elemento que é o irmão próximo de outro Seleciona o primeiro elemento <p> depois de qualquer elemento <h1> 
+(mas não outros elementos <p>)*/
+
+h2+p{
+	border: 1px solid orange;
+}
+
+/*
+	*** SELETOR DE IRMÃO GERAL ***
+*/
+/*Seleciona um elemento que é um irmão de outro, embora ele não precise ser o elemento diretamente precedente 
+Se houvesse dois elementos <p> que fossem irmãos de um elemento <h1>, essa regra se aplicaria ao dois*/
+h3~p{
+	border:1px solid yellow;
+}
+
