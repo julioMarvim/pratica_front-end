@@ -31,12 +31,13 @@
 	text-indent: 40px;/*Identação do texto*/
 	line-height: 40px;/*Modifica a altura da linha, que tem por padrão o tamanho da font (font-size)*/
 	display: block;
-	background: url(../Imagens/menu.png) no-repeat left bottom;/*(..) faz com que a seleção volte a partir da pasta raiz do projeto*/
+	background: #f7b600 url(../Imagens/menu.png) no-repeat left bottom;/*(..) faz com que a seleção volte a partir da pasta raiz do projeto*/
 }
 
 /*Conseguimos criar o efeito de movimentação do menu apenas trocando a posição da imagem de fundo quando o estado do link for 
 hover (passar o mouse sobre)*/
 #menu-lateral a:hover{
 	background-position: right bottom;
+	background-color: #f99200;
 	color: white;
 }
