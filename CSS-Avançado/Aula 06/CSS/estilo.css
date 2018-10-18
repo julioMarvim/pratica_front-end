@@ -1,0 +1,51 @@
+/*
+*****************************
+BARRA DE NAVEGAÇÃO COM ABAS
+*/
+
+/*Definição de uma fonte padrão para o body.*/
+body{
+	font-family: "Trebuchet ms", Helvetica, sans-serif;
+}
+
+/*Limpando a formatação padrão da lista.*/
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+}
+
+/*Modificando o fluxo padrão da lista, para que os itens fiquem dispostos um à esqueda do outro.
+estilização do backgroundo com imagem da li.*/
+ul li{
+	float: left;
+	background: url(../Imagens/aba-direita.png) no-repeat top right;
+}
+
+
+/*Formatações referentes a dimensões e texto dos links da li.
+e estilizações como cor e imagem de fundo.*/
+li a{
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../Imagens/aba-esquerda.png) no-repeat top left;
+	color: #fff;
+}
+
+/*Formatação do estado hover(passando o mouser sobre) do link*/
+ul a:hover{
+	color: #894a1f;
+}
+
+/*Formatando o li a aba selecionada aplicando um novo backgroundo quando o id atual for selecionado*/
+ul #atual{
+	background: url(../Imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+/*Formatando o link da aba selecionada aplicando um novo backgroundo quando o id atual da li ao qual o link pertence for selecionado*/
+ul #atual a{
+	background: url(../Imagens/aba-esquerda-atual.png) no-repeat top left;
+}
