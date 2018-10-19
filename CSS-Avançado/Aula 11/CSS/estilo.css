@@ -1,0 +1,41 @@
+/*
+*****************************
+FORMATAÇÃO ESTILIZANDO TABELAS
+*/
+
+/*Estilização da tabela, serviria para todas as tabelas do projeto não é uma boa prática.*/
+table{
+	width: 600px;
+	/*Une as bordas criando uma estrutra de grades, sem aplicar essa propriedade teremos por padrão a propriedade separate*/
+	border-collapse: separate;
+}
+
+/*Estilizações aplicadas tanto para as th quanto para as td do projeto.*/
+th, td{
+	padding: 7px;
+}
+
+/*Estilizações especificas para as th das tabelas.*/
+th{
+	text-transform: uppercase;/*Coloca todas as letras maiúsculas.*/
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em;/*Modifica os epaços entre as letras.*/
+}
+
+/*Uma cor especifica saltando as linhas para facilitar a visualização dos dados da tabela*/
+tr.alternando-cor{
+	background-color: #efefef;
+}
+
+/*Por convenção valores e numeros muito grandes devem ser alinhados à direita em tabelas.*/
+.preco{
+	text-align: right;
+}
+
+/*Quando o mouse é passado sobre a linha ela muda de cor para facilitar a identificação.*/
+tr:hover{
+	background-color: #c3e6e5;
+}

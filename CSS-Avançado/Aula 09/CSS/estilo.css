@@ -1,0 +1,92 @@
+/*
+*****************************
+FORMATAÇÃO IMAGENS LIQUIDAS
+obs: não é um layout responsivo, utilza porcentagem para preencher o espaço.
+*/
+
+/*Formatação padrão para o body.*/
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+/*Formatação da div container, como altura margem e fundo.*/
+#container{
+	width: 85%/*720px; == 100% do espaçamento total( na verdade 700px soma de 520 + 180)*/
+	margin: 0 auto;
+	background: #fff;
+	/*PARA ORGANIZAR O TAMANHO MAXIMO OU MINIMO TEMOS ALGUMAS PROPRIEDADES DE ALTURA E LARGURA.*/
+	min-width: 580px;/*largura minima*/
+	max-width: 1280px; /*largura maxima*/
+	/*min-height: 600px;/*altura minima*/
+	/*max-height: 920px; /*altura maxima*/
+}
+
+/*Formatação da div marca, altura, alinhamento e fundo.*/
+#marca{
+	height: 200px;
+	background: #225992 url(../Imagens/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+/*Formatação da div conteudo, largura e flutuando a direita.*/
+#conteudo{
+	width: 75%;/*520px; == aprx 75% de 700 com o espaçamento colocamos 74%*/
+	float: right;
+}
+
+/*Formatação para a div conteudo principal.*/
+#conteudo-principal{
+	width: 63%;/*320px; == aprx 64% de 500 com o espaçamento colocamos 63%*/
+	float: left;
+}
+
+/*Formatação para a div conteudo secundario.*/
+#conteudo-secundario{
+	width: 35%;/*180px; == aprx 36% de 500 com o espaçamento colocamos 35%*/
+	float: right;
+	background: #d1d1d1;
+}
+
+/*Formatação para todos os elementos de conteudo secundario aplicando padding.*/
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*Formatação da div navegação largura, flutuando a direita padding e fundo.*/
+#navegacao{
+	width: 24%;/*180px;== aprx 25% de 700 com o espaçamento colocamos 24%*/
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;
+}
+
+#navegacao ul{/*Formatação da ul de navegação.*/
+	list-style: none;
+}
+
+#navegacao li a{/*Formatação do link da li de navegação.*/
+	text-decoration: none;
+}
+
+/*Formatação da div rodapé limpando o fluxo de elementos flutuantes e aplicando fundo e padding.*/
+#rodape{
+	clear: both;
+	background: #c4c4c4;
+	padding:5px;
+}
+
+
+img.img-natureza{
+	width: 94%;/*Porcentagem em relação a div pai ou seja #conteudo*/
+	padding: 4px;
+	max-width: 600px;
+}
+
+
