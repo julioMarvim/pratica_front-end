@@ -1,0 +1,48 @@
+/*
+************************
+ESTILIZANDO FORMULÁRIOS*/
+
+/*Alterando a font dos elementos do body*/
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*Formatação para o fieldset.*/
+fieldset{
+	margin: 1em 0;/*Primeiro valor refere ao top/bottom e o segunto ao left/right*/
+	padding: 1em;
+	border-color: 1px solid #CCC;
+	background: #f8f8f8;
+}
+
+/*Colocando a fonte do legend em negrito.*/
+legend{
+	font-weight: bold;
+}
+
+/*Altaerando algumas propriedades do label*/
+label{
+	display: block;/*Alterando o estado padrão in-line para o estado block.*/
+	cursor: pointer;
+}
+
+/*Alterando a largura do input.*/
+input/*[type="text"]*/{/*Novo seletor de atributos onde se pode escolher atributos dos elementos
+ para qual se deseja aplicar a formatação*/
+	width: 20em;
+}
+
+/*Alteração das dimensões do text area.*/
+textarea{
+	width: 20em;
+	height: 10em;
+}
+
+/*utlizando classes para formatar inputs específicos.*/
+input.radio, input.checkbox, input.submit{
+	width: auto;
+}
+
+.radio{
+	margin-right: 1em;
+}
