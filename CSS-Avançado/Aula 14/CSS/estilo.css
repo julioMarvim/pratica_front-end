@@ -1,0 +1,50 @@
+/*
+******************************
+Arredondamento com Imagens
+*/
+
+.caixa-simples h2{
+	/*Formatação 10px (top) 20px(right) 0px(bottom) 20px(left)*/
+	padding: 10px 20px 0 20px;
+}
+
+/*Formatação para a imagem de topo da caixa.*/
+.caixa-simples{
+	width: 400px;
+	/*a cor #dedede é aplicada no corpo do conteudo, como extensão da imagem de topo e baixo.*/
+	background: #dedede url(../Imagens/topo.png) no-repeat  left top;
+}
+
+/*Formatação para a imagem de baixo da caixa*/
+.caixa-simples p{
+	padding: 0 20px 20px 20px;
+	background: #dedede url(../Imagens/baixo.png) no-repeat left bottom;
+}
+
+
+
+.caixa-degrade h2{
+	/*Formatação 10px (top) 20px(right) 0px(bottom) 20px(left)*/
+	padding: 10px 20px 0 20px;
+	/*A imagem topo é aplicada diretamente no titolo.*/
+	background: url(../Imagens/topo2.png) no-repeat  left top;
+}
+
+/*Formatação para a imagem de topo da caixa.*/
+.caixa-degrade{
+	width: 400px;
+	/*a imagem é repeita na vertical dentro da caixa.*/
+	background: #dedede url(../Imagens/fundo-arredondamento.png) repeat-y;
+}
+
+/*Formatação para a imagem de baixo da caixa*/
+.caixa-degrade .ultimo{
+	background: url(../Imagens/baixo2.png) no-repeat left bottom;
+	width: 400px;
+	height: 24px;
+}
+
+.caixa-degrade p {
+	padding: 0 20px;
+	margin-bottom: 0;
+ }
