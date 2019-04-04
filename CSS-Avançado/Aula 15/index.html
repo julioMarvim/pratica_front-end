@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fontes Customizadas</title>
+	<style type="text/css">
+
+		/*Criação da font customizada*/
+		@font-face{
+			font-family: "Road Rage";/*nomeando a fonte*/
+			src: url("fontes/RoadRage.woff");/*referenciando o arquivo da fonte especifica*/
+		}
+
+		@font-face{
+			font-family: "Bring Heart";
+			src: url("fontes/BringHeart.woff");
+		}
+
+		@font-face{
+			font-family: "Ancient Medium";
+			src: url("fontes/Ancient-Medium.woff");
+		}
+
+		@font-face{
+			font-family: "Madelina Script";
+			src: url("fontes/MadelinaScript.woff");
+		}
+
+
+		#f1{
+			font-size: 3em;
+			font-family: "Road Rage";/*utilizando a fonte customizada, usa-se o nome definido na criação.*/
+		}
+
+		#f2{
+			font-size: 3em;
+			font-family: "Bring Heart";
+		}
+
+		#f3{
+			font-size: 3em;
+			font-family: "Ancient Medium";
+		}
+
+		#f4{
+			font-size: 3em;
+			font-family: "Madelina Script";
+		}
+	</style>
+</head>
+<body>
+	<p>Podemos utilizar fontes customizadas para serem exibidas na web. Desde que tenhamos um arquivo do tipo <b>.woff</b> daquela fonte em questão, sendo assim não há necessidade do usuário ter essa fonte instalada no seu computador. </p>
+	<h1 id="f1">Fontes Customizadas</h1>
+	<h1 id="f2">Fontes Customizadas</h1>
+	<h1 id="f3">Fontes Customizadas</h1>
+	<h1 id="f4">Fontes Customizadas</h1>
+</body>
+</html>
