@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            #conteudo{
+                width: 600px;
+                height: 600px;
+                background: #cdcdcd;
+                display: flex;/*Essa propriedade facilita muito a utilização e posicionamento dos elementos.*/
+
+                /*row|row-reverse|column|column-reverse*/
+                flex-direction:row;
+                /*nowrap|wrap|wrap-reverse*/
+                flex-wrap: wrap;
+
+                /*flex-start|flex-end|center|space-between|space-around*/
+                justify-content: space-between;
+
+                /*stretch|center|flex-start|flex-end|baseline*/
+                align-items: center;
+            }
+
+            .item{
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                background: white;
+                border: 1px solid gray;
+            }
+        </style>
+
+    </head>
+        <h1>Flexbox</h1>
+        <div id="conteudo">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+            <div class="item">05</div>
+        </div>
+        
+    </body>
+</html>
