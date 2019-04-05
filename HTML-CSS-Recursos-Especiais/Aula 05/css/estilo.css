@@ -1,0 +1,92 @@
+/*Animações
+************/
+/*As animações são criadas separadamente e são utilizadas como propriedades dos elementos em CSS.*/
+
+/*prefixo chrome*/
+@-webkit-keyframes animacao-caixa{
+    from{/*Formatação estado inicial*/
+        background: red;
+        border-radius: 0px;
+        top: 0px;
+        left: 0px;
+    }
+    to{/*para formatação estado final*/
+        background: green;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+/*prefixo mozila*/
+@-moz-keyframes animacao-caixa{
+    from{/*Formatação estado inicial*/
+        background: red;
+        border-radius: 0px;
+        top: 0px;
+        left: 0px;
+    }
+    to{/*para formatação estado final*/
+        background: green;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+/*prefixo opera*/
+@-o-keyframes animacao-caixa{
+    from{/*Formatação estado inicial*/
+        background: red;
+        border-radius: 0px;
+        top: 0px;
+        left: 0px;
+    }
+    to{/*para formatação estado final*/
+        background: green;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+/*prefixo padrão*/
+@keyframes animacao-caixa{
+    from{/*Formatação estado inicial*/
+        background: red;
+        border-radius: 0px;
+        top: 0px;
+        left: 0px;
+    }
+    to{/*para formatação estado final*/
+        background: green;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+#caixa-1{
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+    -webkit-animation-name: animacao-caixa; /*prefixo chrome*/   
+    -moz-animation-name: animacao-caixa; /*prefixo mozila*/
+    -o-animation-name: animacao-caixa; /*prefixo opera*/
+    animation-name: animacao-caixa; /*Chamada da nossa animaçação.*/
+    animation-duration: 5s; /*Duaração em segundo da animação*/
+    -webkit-animation-duration: 5s; /*prefixo chrome*/  
+    -moz-animation-duration: 5s; /*prefixo mozila*/
+    -o-animation-duration: 5s; /*prefixo opera*/
+    animation-delay: 3s; /*tempo para iniciar a animação*/
+    animation-iteration-count: 2; /*quantidade de iterações ou vezes*/
+    animation-direction: alternate; /*direção da animação*/
+}
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+    /*podemos colocar todas as propriedades de animação em uma só*/
+    animation: animacao-caixa 5s 3s 2 alternate;
+}
+

@@ -1,0 +1,24 @@
+/*Transições
+*************/
+
+#caixa-1{
+    width: 300px;
+    height: 300px;
+    background: orange;
+}
+
+#caixa-1:hover {
+    width: 400px;
+    background: yellow;
+    -webkit-transition: width  3s, background 3s;
+    -moz-transition: width  3s, background 3s;
+    -o-transition: width  3s, background 3s;
+    transition: width  3s, background 3s;/*define o tempo por propriedade que eu quero transicionar.*/
+}
+
+#caixa:hover{
+    -webkit-transition:all 3s;
+    -moz-transition:all 3s;
+    -o-transition:all 3s;
+    transition: all 3s;/*defime o mesmo tempo para todas as propriedades.*/
+}
