@@ -1,0 +1,22 @@
+#caixa-1{
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    /*Essa propriedade adiciona sombra ao texto, os valores representam o deslocamento horizontal e vertical e o terceiro 
+    valor adiciona um blur no elemento ao qual estiver sendo aplicado mas não altera o tamanho da sombra e o quarto valor 
+    representa um espalhamento da sombra respectivamente e a cor representa a cor da sombra essa sombra funciona como um  
+    background e fica abaixo do texto numeros negativos movimental para outra direção.
+               Hori Vert blur Spread     cor da sombra */
+    box-shadow:20px 15px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+#caixa-1 h1{
+    color: white;
+    /*Essa propriedade adiciona sombra ao texto, os valores representam o deslocamento horizontal e vertical e o terceiro 
+    valor adiciona um blur no elemento ao qual estiver sendo aplicado respectivamente e a cor representa a cor da sombra 
+    essa sombra funciona como um background e fica abaixo do texto numeros negativos movimental para outra direção.
+                Hori Vert blur   cor da sombra */
+    text-shadow:20px 15px 5px rgba(0, 0, 0, 0.3);
+}
