@@ -1,0 +1,34 @@
+#caixa-1{
+	width: 300px;
+	height: 300px;
+	background: url(../imagens/camera.png);
+}
+
+#caixa-1 h1{
+	/*com o rgba temos um ultimo valor que a medida que alterado aplica um opacidade na cor*/
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#caixa-2{
+	width: 300px;
+	height: 300px;
+	/*com essa propriedade podemos definir quais cores queremos criar um degradê, e definir PARA qual direção 
+	esse degradê irá com o parametro TO*/
+	background: linear-gradient( to top, #CCC, green);
+}
+
+#caixa-3{
+	width: 300px;
+	height: 300px;
+	/*com essa propriedade podemos definir quantas cores qusermos e criar um degradê, e definir PARA qual direção 
+	esse degradê irá com o parametro de quantos GRAUS DE INCLINACAO com o sufixo "deg"*/
+	background: linear-gradient( 45deg, #CCC, green, yellow, blue, gray, red);
+}
+
+#caixa-4{
+	width: 300px;
+	height: 300px;
+	/*com essa propriedade podemos definir quais cores queremos criar um degradê, e definir PARA qual direção 
+	esse degradê irá com um valor RADIAL não há parametro de direção*/
+	background: radial-gradient(#CCC, green, yellow, blue, gray, red);
+}

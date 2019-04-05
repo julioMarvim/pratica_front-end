@@ -1,0 +1,48 @@
+#caixa-1{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 150px;/*define em pixels o valor de arredondamento de uma caixa*/
+}
+
+.arredondamento{
+	border-radius: 150px;/*o arredondamento vai do ponto central de um lado até o ponto central do 
+	outro lado por exemplo centro do topo e centro da lateral direita, mas serve parar todos os lados*/
+}
+
+#caixa-2{
+	width: 300px;
+	height: 300px;
+	background: #f9c959;
+	padding: 10px;
+	margin: 10px;
+				/* ET  DT   DB   EB          Esquera topo/direita topo/ direita baixa/ esquerda baixo*/
+	border-radius: 10px 50px 80px 100px;
+	/*Em alguns browsers EM VERSES MAIS ANTIGAS não é possivel utilizar border-radious sem a inclusão de prefixos 
+	especificos para cada um deles*/
+	-webkit-border-radius: 10px 50px 80px 100px;/*Chrome*/
+	-moz-border-radius: 10px 50px 80px 100px;/*Mozila*/
+}
+
+#caixa-3{
+	width: 300px;
+	height: 300px;
+	background: #ac54b2;
+	padding: 50px; /*um padding maior o valor do padding será somado ao valor total da caixa
+	neste caso temos 300 + 50 esquerdo + 50 direito*/	
+}
+
+#caixa-4{
+	margin: 10px;
+	width: 300px;
+	height: 300px;
+	background: #ac54b2;
+	padding: 50px;
+	/*Com esta propriedade e o valor border-box a caixa perde esta propriedade ou seja independente
+	do valor do padding a caixa sempre terá o valor estipulado.*/
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;/*Chrome*/
+	-moz-box-sizing: border-box;/*Mozila*/
+}
