@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compatibilidade HTML 5</title>
+	<meta charset="utf-8">
+	
+	<!--Estilo Customizado-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<form>
+
+        <!--Novos Inputs e atributos HTML 5-->
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required autofocus><!--com esse recurso required o campo se torna obrigatório.-->
+        <br><br>                                                    <!--com o recurso autofocus esse campo já é selecionado quando a pagina for carregada.-->
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><!--Com o type email será exigido um email com escríta valida.-->
+        <br><br>    
+
+        <label for="numero">Numero</label>
+        <input type="number" name="numero" id="numero" min="1" max="20" step="5"><!--Somente numero e pode-se usar valor minimo e maximo e stap no caso de 5 em 5.-->
+        <br><br>    
+
+        <label for="url">Url</label>
+        <input type="url" name="url" id="url" placeholder="ex: http://..."><!--este tipo url valida se é uma url.-->
+        <br><br>    
+
+        <label for="pesquisa">Pesquisa</label>
+        <input type="search" name="pesquisa" id="pesquisa"><!-- já possui o x de limpar o campo para facilitar a pesquisa-->
+        <br><br> 
+
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" min="1" max="20" value="2"><!--é um marcador que pode ser arrastado e possui valor minimo e maximo e valor fixo.-->
+        <br><br> 
+
+        <label for="data">Data</label>
+        <input type="date" name="data" id="data"><!--formata a data e aplica funções especificas como exibir calendario.-->
+        <br><br> 
+
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor"><!--mostra um selecionador de cores.-->
+        <br><br> 
+
+        <input type="submit" name="" value="Enviar">
+    </form>
+</body>
+</html>
