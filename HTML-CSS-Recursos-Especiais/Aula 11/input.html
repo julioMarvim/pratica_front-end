@@ -3,20 +3,36 @@
         <meta charset="utf-8">
         <style type="text/css">
             #conteudo{
-                width: 600px;
                 height: 600px;
                 background: #cdcdcd;
-                display: flex;/*Essa propriedade facilita muito a utilização e posicionamento dos elementos.*/
+                display: flex;/*da a impressão que estamos trabalhando com itens inline, mas não.*/
 
-                /*row|row-reverse|column|column-reverse*/
+                /*row: é a propriedade defalt.
+                |row-reverse: inverte a ordem e o lado do elemento.
+                |column: posiciona um item abaixo do outro.
+                |column-reverse: inverte a ordem dos elementos.*/
                 flex-direction:row;
-                /*nowrap|wrap|wrap-reverse*/
-                flex-wrap: wrap;
+                /*nowrap: é a propriedade padrão que define que não havera quebra de linha itens
+                 independente do tamanho do container os itens serão redimensionados para caber sem quebrar.
+                |wrap: permite a quebra e reposicionamento do item para caber no container.
+                |wrap-reverse inverte a ordem dos elementos e posiciona na parte de baixo do container.*/
+                flex-wrap: nowrap;
 
-                /*flex-start|flex-end|center|space-between|space-around*/
+                /*flex-start: é a propriedade padão que posiciona os elementos a partir do campo superior esquerdo
+                |flex-end: posiciona no canto superior direito.
+                |center: centralisa os itens.
+                |space-between: distribui os itens com espaçamento proporcional entre eles com os itens da extremidade
+                colados.
+                |space-around: redistribui os itens com o mesmo espaçamento inclusive para os da extremidade. */
                 justify-content: space-between;
 
-                /*stretch|center|flex-start|flex-end|baseline*/
+                /*stretch: por padrão a propriedade flex faz os itens preencherem toda a altura disponivel do container
+                com a propriedade stretch que tem essa função.
+                |center: centraliza a altura dos elementos.
+                |flex-start: cola os itens na parte superior ou seja na autura maxima.
+                |flex-end:cola os itens na parte inferior ou seja na autura minima.
+                |baseline: define uma linha base para o alinhamento com base no texto do elemento, com essa propriedade
+                todos os elementos serão alinhados a partir dessa linha.*/
                 align-items: center;
             }
 
