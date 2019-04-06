@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            #conteudo{
+                height: 300px;
+                background: #cdcdcd;
+                display: flex;/*da a impressão que estamos trabalhando com itens inline, mas não.*/
+            }
+
+            #conteudo-1{
+                height: 600px;
+                background: #cdcdcd;
+                display: flex;/*da a impressão que estamos trabalhando com itens inline, mas não.*/
+            }
+
+            .item{
+                height: 100px;
+                margin: 10px;
+                background: white;
+                border: 1px solid gray;
+                /*Define a proporção de espaço ocupado por um item*/
+                flex-grow: 0;
+                /*indica o tamanho inicial do flex intem antes da distribuição do espaço restante*/
+                flex-basis: 200px;
+            }
+
+            .item-1{
+                /*flex-grow: 1;*/
+                flex-shrink: 1;/*define o quanto o elemento irá encolher quando o layout diminuir, quanto maior o valor
+                mais o elemento encolhe.*/
+            }
+
+            .item-2{
+                /*flex-grow: 2;*/
+               flex-shrink: 2;
+            }
+
+            .item-3{
+                /*flex-grow: 3;*/
+                flex-shrink: 3;
+                /*indica o tamanho inicial do flex intem antes da distribuição do espaço restante*/
+            }
+
+        </style>
+
+    </head>
+        <h1>Flexbox</h1>
+        <div id="conteudo">
+            <div class="item item-1">01</div>
+            <div class="item item-2">02</div>
+            <div class="item item-3">03</div>
+            <div class="item">04</div>
+        </div>
+        
+
+        <div id="conteudo-1">
+            <div class="item item-4">01</div>
+            <div class="item item-5">02</div>
+            <div class="item item-6">03</div>
+            <div class="item">04</div>
+        </div>
+
+    </body>
+</html>
