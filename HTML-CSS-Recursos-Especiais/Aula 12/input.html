@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            #conteudo{
+                height: 600px;
+                background: #cdcdcd;
+                display: flex;/*da a impressão que estamos trabalhando com itens inline, mas não.*/
+            }
+
+            .item{
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                background: white;
+                border: 1px solid gray;
+                /*Define a proporção de espaço ocupado por um item*/
+                flex-grow: 0;
+            }
+
+            .item-1{
+                flex-grow: 1;/*quando aplicado o valor quanto maior o numero mais o elemento se expande para ocupar todo o espaco disponivel*/
+            }
+
+            .item-2{
+                flex-grow: 2;
+            }
+
+            .ordem1{
+                order: 1;
+            }
+
+            .ordem2{
+                order: 2;
+            }
+
+            .ordem3{
+                order: 3;
+            }
+
+            .ordem4{
+                order: 4;/*define a ordem do menor o valor inclusive se negativo para o maior*/
+            }
+        </style>
+
+    </head>
+        <h1>Flexbox</h1>
+        <div id="conteudo">
+            <div class="item item-1 ordem1">01</div>
+            <div class="item item-2 ordem2">02</div>
+            <div class="item item-2 ordem3">03</div>
+            <div class="item ordem4">04</div>
+        </div>
+        
+    </body>
+</html>
