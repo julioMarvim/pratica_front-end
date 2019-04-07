@@ -1,0 +1,75 @@
+/**** CONFIGURAÇÕES PADRÃO  ****/
+
+.conteudo{
+	color: #777;
+	background-color: white;
+	text-align: justify;
+	padding: 50px 80px;
+}
+
+body, html{
+	margin: 0px;
+	font: 16px "Lato", sans-serif;
+	color: #777;
+	height: 100%; /*O SEGREDO DO PARALAX ESTÁ AQUI.*/
+}
+
+h3{
+	color: #111;
+	text-align: center;
+}
+
+p{
+	margin-bottom: 20px;
+}
+
+/**** EFEITO PARALAX ****/
+
+
+/*aplicando uma estilização genérica*/
+.caixa1, .caixa2, .caixa3, .caixa4{
+	position: relative;
+	height: 100%;
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-size: cover;/*faz com que a imagem aumente ou diminua de acordo com o tamanho da tela do dispositivo.*/
+	background-position: center;/*imagem permanece sempre centralizada.*/
+	background-attachment: fixed;/*faz com que o background fique fixo O EFEITO PARALAX*/
+}
+
+/*aplicando uma estilização mais específica*/
+.caixa1{
+	background-image: url(../Imagens/imagem1.jpg);
+}
+
+/*aplicando uma estilização mais específica*/
+.caixa2{
+	background-image: url(../Imagens/imagem2.jpg);
+}
+
+/*aplicando uma estilização mais específica*/
+.caixa3{
+	background-image: url(../Imagens/imagem3.jpg);
+}
+
+/*aplicando uma estilização mais específica*/
+.caixa4{
+	background-image: url(../Imagens/imagem4.jpg);
+}
+
+.conteudo-titulo{
+	position:absolute;
+	left: 0%;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.conteudo-titulo span.titulo{
+	background-color: #111;
+	padding: 18px;
+	font-style: 25px;
+	letter-spacing: 5px;
+	color: #fff;
+}
