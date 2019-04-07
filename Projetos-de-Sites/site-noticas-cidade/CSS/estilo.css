@@ -1,0 +1,298 @@
+/*
+*********************
+Estrutura do Site
+*/
+
+
+/* ***TOPO*** */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #FFF url(../Imagens/fundo.png) repeat-x;
+}
+
+p{
+	margin:10px 5px;
+}
+/*Formatação para a div principal do site.*/
+#container{
+	width: 750px;
+	margin: 0 auto;
+}
+
+/*Formatação para o topo do site, dimensões e imagens (Brasil)*/
+#topo{
+	height: 150px;
+	padding-top: 25px;
+	background: url(../Imagens/detalhe-topo.png) no-repeat right top;
+}
+
+/*Formatação para o logo aplicado a uma tag H1, com o testo identado para não ser visto pelo usuario, mas otimizado pelos
+buscadores.*/
+.logo{
+	width: 152px;
+	height: 66px;
+	background: url(../Imagens/logo.png) no-repeat center;
+	text-indent: -3000px; 
+}
+
+/* ***BARRA DE NAVEGAÇÃO TOPO*** */
+
+/*Formatação padrão para todas as UL do documento.*/
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:link, a:visited{
+	color: #b10333;
+	padding: 2px;
+}
+
+a:hover{
+	color: #e50040;
+}
+
+/*Formatação específica para as ul do topo*/
+#topo ul{
+	margin-top: 30px;
+	background: #b10333;
+	float: left;
+}
+
+/*Formatação específica para as li do topo*/
+#topo ul li{
+	float: left;
+}
+
+/*Formatação especifica para os links da ul do topo*/
+#topo ul a{
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../Imagens/divisor.png) no-repeat left center;
+}
+
+/*Removendo o divisor a esquerda do primeiro elemento a do topo.*/
+#topo ul .primeiro a{
+	background: none;
+}
+
+
+/*Formatação do estado hover do link (passar o mouse sobre)*/
+#topo ul a:hover{
+	color: #69001d;
+}
+
+
+/*Formatação para marcar qual pagina está selecionada*/
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.hoeconomiame #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos
+{
+	color: #fff;
+	background: #de003e;
+	cursor: text;
+}
+
+
+/* *** CONTEÚDO layout de TRES COLUNAS *** */
+
+
+/*Formatação padrão para todo espaço destinado ao conteúdo.*/
+#conteudo{
+	margin-top: 60px;
+	background: #f5f5f5;
+}
+
+
+/*Formatando imagens.*/
+img{
+	border: 2px solid #dfdfdf;
+}
+
+.imagem-principal{
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/*Formatando Titulos H3*/
+h3{
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3{
+	background: #b10333;
+	color: #FFF;
+}
+.destaque h1{
+	background: #294c71;
+	margin: 10px 5px;
+	color: #FFF;
+}
+
+.entrevista h3{
+	background: #de003e;
+}
+
+/*Formatação específica para o conteúdo lateral*/
+#lateral{
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px; /*Posicionamento da div através da margem com -750px a esquerda.*/
+}
+
+.caixa{
+	margin: 10px 0;
+	padding: 5px 0 5px 0;
+	background: #f3f3f3 url(../Imagens/fundo-caixa.png);
+}
+
+.caixa-conteudo{
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+h2{
+	font-size: 1em;
+	padding: 5px;
+	background: #294c71;
+	color: #fff;
+}
+
+/*Formatação específica para o conteúdo primário com tres colunas.*/
+#primario{
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px; /*Posicionando a div através da margem, com 195px(180 + 15) para caber o conteudo lateral.*/
+}
+
+/*Formatação específica para o conteúdo primário com duas colunas.*/
+#duas-colunas #primario{
+	width: 555px;
+}
+
+/*Formatação específica para o conteúdo primário com uma coluna.*/
+#uma-coluna #primario{
+	width: 750px;
+	margin: 0 0 20px 0;
+}
+
+/*Formatação específica para o conteúdo secundario*/
+#secundario{
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;/*Posicionando a di atraves da margem com 15px para espaçamento a esquerda.*/
+}
+/* *** BARRA LATERAL *** */
+
+
+/*Formatação exclusiva para os links da ul da div lateral.*/
+#lateral ul a{
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #f3f3f3;
+}
+
+/*Formatando o estado hover dos links da ul da div lateral.*/
+#lateral ul a:hover{
+	background: #f9f9f9 url(../Imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+/*Formatação lista de Notícias*/
+
+#lista-noticias li{
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px; 
+}
+#lista-noticias li a img{
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a{
+	text-decoration: none;
+}
+
+#lista-noticias li a h3{
+	text-decoration: none;
+	padding: 0;
+	color: #3e7ab9; 
+}
+
+#lista-noticias li a p{
+	text-decoration: none;
+	font-size: 0.7em;
+	color: #000;
+}
+
+#lista-noticias li:hover{
+	background: #eee;
+	cursor: pointer;
+} 
+#lista-noticias li{
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 65px; 
+}
+
+/* *** FORMULÁRIO *** */
+
+label{
+	display: block;
+	cursor: pointer;
+}
+
+input{
+	padding: 5px; 
+	width: 125px;
+	font-size: 0.9em;
+	background-color: #fff; 
+}
+
+/*Formatação da class submit dos imputs.*/
+input.submit {
+	color: #fff;
+	background-color: #b10333;
+	border: 1px solid #870529; 
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+/* *** RODAPÉ *** */
+
+/*Formatação padrão para o rodapé.*/
+#container-rodape{
+	background: #294c71;
+	padding: 20px;
+}
+
+
+#rodape{
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+}
