@@ -1,0 +1,127 @@
+<!doctype html>
+<!--utilizaremos a linguagem em portugês.-->
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--viewport é toda a area disponível da tela, tanto horizontal quanto vertical.
+    whidth="device-width quer dizer que a largura do projeto é igual a largura do dispositivo
+    inicial-scale="1" basicamente define um zoom padrão, que é não ter zoom.
+    shrink-to-fit=no fazer com que quando temos um conteúdo quer ultrapasse o tamanho da viewport
+    o conteúdo reduza para caber.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--esta tag integrity é ua medida de segurança caso seja usado o bootstrap do cdn.-->
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    <title>Bootstrap</title>
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px;">
+    <h1>Cabeçalho 1</h1>
+    <h2>Cabeçalho 2</h2>
+    <h3>Cabeçalho 3</h3>
+    <h4>Cabeçalho 4</h4>
+    <h5>Cabeçalho 5</h5>
+    <!--Podemos aplicar uma classe para mudar o tamanho de um cabeçalho para o tamanho de outro.-->
+    <h6 class="h1">Cabeçalho 6</h6>
+
+    <br><br>
+    <!--com a classe "display-x" podemos dar ainda mais destaque para um cabeçalho.-->
+    <h1 class="display-1">Distplay 1</h1>
+    <h1 class="display-2">Distplay 2</h1>
+    <h1 class="display-3">Distplay 3</h1>
+    <h1 class="display-4">Distplay 4</h1>
+
+    <br><br>
+    <p>
+      Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </p>
+
+    <!--Com essa class="lead" podemos dar um destaque ainda maior para um parágrafo. e pode ser aplicada em qualquer elemento.-->
+    <p class="lead">
+      Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </p>
+
+    <!--Parágrafo Monospace - para utilização de fonte monoespaçada, ou seja com o mesmo valor por letra.-->
+    <p class="text-monospace">
+      Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </p>
+
+    <br><br>
+    <!--Classes de Estilos - podem ser aplicadas em qualquer elementos.-->
+    <p class="font-weight-bold">Texto Negrito</p>    
+    <p class="font-weight-normal">Texto Normal</p>
+    <p class="font-italic">Texto Itálico</p>
+
+    <br><br>
+    <!--Transformação de textos -  podem ser aplicadas em qualquer elementos.-->
+    <p class="text-uppercase">Letras Maiúsculas</p>    
+    <p class="text-lowercase">Letras Minúsculas</p>
+    <p class="text-capitalize">primeira maiúscula</p>
+
+
+    <br><br>
+    <!--Classes para Alinhamento-->
+    <p class="text-right">Direita</p>
+    <p class="text-left">Esquerda</p>
+    <p class="text-center">Centralizado</p>
+
+    <!--Bloco de Citação-->
+    <!--Podemos também combinar classes, como por exemplo blockquote + text-right-->
+    <!-- formatação diferenciada com a classe class="blockquote".-->
+    <blockquote class="blockquote text-right">
+      <p>
+        Esse é um bloco de citação.
+      </p>
+    </blockquote>
+
+
+    <br><br>
+    <!--Bloco de citação com rodapé-->
+    <blockquote class="blockquote text-right">
+      <p>
+        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </p>
+      <!--formatação diferenciada-->
+      <footer class="blockquote-footer">
+        Por: <cite>Julio Márvim</cite>
+      </footer>
+    </blockquote>
+
+    <br><br>
+    <!--Truncate-->
+    <p class="text-truncate">
+      Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    </p>
+
+    <br><br>
+    <!--Lista de sem estilo-->
+    <ul class="list-unstyled">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <br><br>
+    <!--Lista inline-->
+    <ul class="list-inline">
+      <!--Será necessário uma aplicação de uma classe class="list-inline-item" para cada item da lista.-->
+      <li class="list-inline-item">Item 1</li>
+      <li class="list-inline-item">Item 2</li>
+      <li class="list-inline-item">Item 3</li>
+    </ul>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--popper é utilizada para mostrar elementos escondidos na tela.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
