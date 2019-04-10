@@ -1,6 +1,7 @@
 diretorio:
 
 cd /c/ambiente_de_desenvolvimento/pratica_front-end
+cd /c/ambiente-desenvolvimento/pratica_front-end
 
 git init
 git status
